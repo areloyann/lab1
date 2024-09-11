@@ -1,0 +1,17 @@
+#include <iostream>
+using namespace std;
+int bajanarar(int a, int b){
+    while(b!=0){
+        int temp=b;
+        b=a%b;
+        a=temp;
+    }
+    return a;
+}
+int main() {
+ int tiv1, tiv2;
+ cin>>tiv1>>tiv2;
+ int patasxan=bajanarar(tiv1, tiv2);
+cout<<patasxan;
+    return 0;
+}
